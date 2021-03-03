@@ -1,0 +1,385 @@
+/* general */
+body, textarea {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #70747a;
+}
+
+/* navbar */
+.navbar-container {
+    background-color: #232a31;
+    box-sizing: border-box;
+    height: 80px;
+    padding: 0 2em;
+    /*position: relative;*/
+    width: 100%;
+}
+
+.logo {
+    margin-top: 15px;
+    width: 50px;
+}
+
+nav {
+    position: relative;
+}
+
+.navbar-items {
+    display: inline-block;
+    line-height: 80px;
+    list-style: none;
+    /*height: 80px;*/
+    margin: 0;
+    position: absolute;
+    right: 0;
+}
+
+.navbar-items li {
+    display: inline-block;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+.navbar-items li a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.navbar-items li a:hover {
+    color: #ccc;
+}
+
+.default-btn {
+    background-color: #2cc76a;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.default-btn:hover {
+    background-color: #22bb5f;
+    color: #fff;
+}
+
+/* main banner */
+
+.main-banner {
+    background-image: url("img/mainbanner.png");
+    background-position: center;
+    background-size: cover;
+    padding: 10em 0;
+    position: relative;
+}
+
+.main-banner h1, .main-banner p {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-banner h1 {
+    font-size: 54px;
+}
+
+.main-banner p {
+    font-size: 32px;
+}
+
+/* especialidades */
+
+.specialties-container {
+    padding: 5em 0;
+}
+
+.specialties-container ul {
+    display: flex;
+    margin-left: auto;
+    /*position: relative;*/
+    margin-right: auto;
+    padding-left: 0;
+    width: 90%;
+}
+
+.specialties-container ul li {
+    flex: 1 1 200px;
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.fas {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt {
+    color: #2cc76a;
+}
+
+.fa-rocket {
+    color: #ef3f29
+}
+
+.fa-comments {
+    color: #ef8f29;
+}
+
+.specialties-container ul li h3 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.specialties-container ul li p {
+    color: #70747a;
+    line-height: 24px;
+}
+
+/* preços */
+
+.pricing-container {
+    padding-bottom: 5em;
+    text-align: center;
+}
+
+.pricing-container h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.pricing-container p {
+    font-size: 20px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    /*position: relative;*/
+    margin-top: 50px;
+    width: 90%;
+}
+
+.plan {
+    flex: 1 1 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: 275px;
+}
+
+.plan ul {
+    padding: 0;
+}
+
+.plan li {
+    background-color: #e8e9ea;
+    color: #333;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+}
+
+.plan .price {
+    background-color: #2cc76a;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    height: 120px;
+    line-height: 120px;
+    margin-bottom: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    width: 120px;
+}
+
+.plan .plan-name {
+    background-color: #202b34;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.plan .plan-btn {
+    background-color: #2cc76a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+}
+
+.plan .recommended {
+    background-color: #f45c57;
+}
+
+/* buscar dominio */
+
+.searchdomain-container {
+    background-color: #34454e;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.searchdomain-container h2 {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.searchdomain-container p {
+    color: #d5d5d5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input {
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.searchdomain-container input[type=text] {
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 60%;
+}
+
+.searchdomain-container input[type=submit] {
+    background-color: #2cc76a;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 30px;
+}
+
+/* contato */
+
+.contact-container {
+    padding-bottom: 2em;
+    padding-top: 5em;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input, .contact-container textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 200px;
+}
+
+.contact-container textarea {
+    display: block;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 468px;
+}
+
+.contact-container input[type=submit] {
+    background-color: #2cc76a;
+    color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+/* footer */
+
+footer {
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1100px) {
+
+    .plans-container {
+        width: 95%;
+    }
+
+    .plan {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .plans-container, .specialties-container ul {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .navbar-items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    html, body {
+        overflow-x: hidden
+    }
+
+    .plan {
+        max-width: 100%;
+    }
+
+    .searchdomain-container {
+        padding: 3em 2em;
+    }
+
+    .container .searchdomain-container input {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 3em 2em;
+    }
+
+    .contact-container input, .contact-container textarea {
+        box-sizing: border-box;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
